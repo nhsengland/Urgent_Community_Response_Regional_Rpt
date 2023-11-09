@@ -1,27 +1,34 @@
-# {PROJECT NAME}
+# Urgent Community Response (UCR) Regional Report
 ## NHS England Digitial Analytics and Research Team - PhD Internship Project
 
 ### About the Project
 
-[![status: experimental](https://github.com/GIScience/badges/raw/master/status/experimental.svg)](https://github.com/GIScience/badges#experimental)
+This repository holds code for the regional anal;ysis of UCR data.
 
-This repository holds code for the {PROJECT NAME} {SHORT DESCRIPTION}
-
-[Link to original project propsoal](https://nhsx.github.io/nhsx-internship-projects/)
 
 _**Note:** Only public or fake data are shared in this repository._
 
 ### Project Stucture
 
 - The main code is found in the root of the repository (see Usage below for more information)
-- The accompanying [report](./reports/report.pdf) is also available in the `reports` folder
-- More information about the code usage can be found in the [model card](./model_card.md)
-- {OTHER REPO STRUCTURE}
+
 
 ### Built With
 
-[![Python v3.8](https://img.shields.io/badge/python-v3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
-- {LIST OF MAIN PACKAGE VERSIONS}
+{LIST SOFTWARE USED TO CREATE PROJECT}
+
+[R Studio](http://www.rstudio.com/.)  
+[R Statistical Software](https://www.R-project.org/.)  
+[SQL SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)  
+
+- library(tidyverse)
+- library(janitor)
+- library(NHSRplotthedots)
+- library(gt)
+- library(gtExtras)
+- library(odbc)
+- library(glue)
+
 
 ### Getting Started
 
@@ -31,31 +38,33 @@ To get a local copy up and running follow these simple steps.
 
 To clone the repo:
 
-`git clone https://github.com/nhsx/{REPO NAME}`
-
-To create a suitable environment:
-- ```python -m venv _env```
-- `source _env/bin/activate`
-- `pip install -r requirements.txt`
-
-{ADDITIONAL TECHNICAL SUPPORT AND NEEDS} 
+`git clone https://github.com/nhsengland/Urgent_Community_Response_Regional_Rpt`
 
 ### Usage
-{DESCRIPTION OF CODE}
+
+Code contains SQL query to pull data from UDAL warehouse.
+
+You will need to create your own personal_creds.R file 
+
+This will need to contain two variables
+
+serv <- "{connection_string_to_warehouse}"
+id <- "user_name@udal.nhs.uk"
+
 
 #### Outputs
-{LIST AND DESCRIPTION OF OUTPUTS}
+The output is a HTML report that shows analysis of reginal and local ICB performance and activty for UCR
 
-{NOTES ON REPRODUCIBILITY OF RESULTS}
+
 
 #### Datasets
-{DESCRIPTION AND LINKS TO DATASETS}
+The dataset is in a UKHF table within UDAL and requires no additional access beyond stand NHSE access.
 
-{LINK TO FAKE DATA TO SUPPORT INITAIL CODE RUNS}
+I will post a data cut in a .csv to support testing of this code in due course.
 
 ### Roadmap
 
-See the {LINK TO REPO ISSUES} for a list of proposed features (and known issues).
+This is designed to be part of a wider community information pack.
 
 ### Contributing
 
@@ -85,7 +94,9 @@ of the [Open Government 3.0][ogl] licence.
 
 ### Contact
 
-To find out more about the [Digitial Analytics and Research Team](https://www.nhsx.nhs.uk/key-tools-and-info/nhsx-analytics-unit/) visit our [project website](https://nhsx.github.io/AnalyticsUnit/projects.html) or get in touch at [analytics-unit@nhsx.nhs.uk](mailto:analytics-unit@nhsx.nhs.uk).
+To find out more about the South West Intelligence and Insights Team visit our [South West Intelligence and Insights Team Futures Page](https://future.nhs.uk/SouthWestAnalytics)) or get in touch at [england.southwestanalytics@nhs.net](mailto:england.southwestanalytics@nhs.net).
 
 <!-- ### Acknowledgements -->
+
+
 
