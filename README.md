@@ -1,5 +1,5 @@
 # Urgent Community Response (UCR) Regional Report
-## NHS England Digitial Analytics and Research Team - PhD Internship Project
+## NHS England South West Intelligence and Insights
 
 ### About the Project
 
