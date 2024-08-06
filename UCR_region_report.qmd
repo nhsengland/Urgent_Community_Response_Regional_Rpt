@@ -278,16 +278,16 @@ table$tar <- 75
 # create table
 gt_table <- table |>
   gt() |>
-  gt_fa_column(trend.x,
-    height = px(15),
-    palette = "Black",
-    align = "center"
-  ) |>
-  gt_fa_column(trend.y,
-    height = px(15),
-    palette = "Black",
-    align = "center"
-  ) |>
+  fmt_icon(columns = c(trend.x,trend.y)) |>
+  #   height = px(15),
+  #   palette = "Black",
+  #   align = "center"
+  # ) |>
+  # gt_fa_column(trend.y,
+  #   height = px(15),
+  #   palette = "Black",
+  #   align = "center"
+  # ) |>
   gt_duplicate_column(perc_ach, 
                       after = perc_ach, 
                       append_text = "bar") |>
